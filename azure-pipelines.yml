@@ -15,22 +15,14 @@ stages:
               provider: 'azurerm'
               command: 'init'
               workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-=======
-          
->>>>>>> 0c620175a2e0ba9d401191449e39e634c1558818
-=======
-              backendServiceArm: 'your-arm-service-connection'
-              backendAzureRmResourceGroupName: 'your-backend-rg'
-              backendAzureRmStorageAccountName: 'your-storage-account'
-              backendAzureRmContainerName: 'your-container'
-              backendAzureRmKey: 'your-key'
+              backendServiceArm: 'myARMServiceConnection'
+              backendAzureRmResourceGroupName: 'myResourceGroup'
+              backendAzureRmStorageAccountName: 'mystorageaccountmichel'
+              backendAzureRmContainerName: 'mycontainer'
+              backendAzureRmKey: 'oKPCLx06W+g8BGSGprz8xgjXroMi6odokHr9JF7b6BwSC26tFX4ctanBkNvU5g9nhuabPzKjtqkk+AStKrezHg=='
           - task: TerraformCLI@0
             inputs:
               provider: 'azurerm'
               command: 'apply'
               workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-              environmentServiceNameAzureRM: 'your-azure-service-connection'
->>>>>>> 0255248b6b606e92c885b9ef3252f4920fc5c5de
+              environmentServiceNameAzureRM: 'myARMServiceConnection'
