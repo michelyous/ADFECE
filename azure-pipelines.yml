@@ -26,4 +26,3 @@ stages:
               command: 'apply'
               workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
               environmentServiceNameAzureRM: 'your-azure-service-connection'
-              environmentServiceNameAzureRm: 'your-azure-service-connection'
